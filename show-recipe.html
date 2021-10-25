@@ -24,7 +24,7 @@
             </div>
         </div>
             <script>
-                var id = getid();
+                var id = getId();
                 
                 function getRecipe(){
                     var rootPath = "https://mysite.itvarsity.org/api/recipe-book/";
@@ -60,7 +60,7 @@
                     })
                 }
                 
-                function getid(){
+                function getId(){
                     var url = window.location.href;
                     var pos = url.search("=");
                     var id = url.slice(pos + 1);
